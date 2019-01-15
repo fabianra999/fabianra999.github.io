@@ -1,0 +1,25 @@
+{
+  "name": "AC Estrategias",
+  "description": "AC Estrategias Contables y Financieras ",
+  "main": "view/components/head.php",
+  "directory": "app/components/",
+  "authors": [
+    "yeaa"
+  ],
+  "license": "MIT",
+  "moduleType": [
+    "es6",
+    "globals",
+    "node"
+  ],
+  "dependencies": {
+    "bootstrap": "v4.0.0-alpha.6",
+    "font-awesome": "^4.7.0",
+    "gsap": "^1.19.1",
+    "Ionicons": "ionicons#^2.0.1",
+    "jquery": "^3.2.1",
+    "jquery-ui": "^1.12.1",
+    "slick-carousel": "^1.6.0",
+    "tether": "^1.4.1"
+  }
+}

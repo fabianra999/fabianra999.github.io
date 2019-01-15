@@ -1,0 +1,35 @@
+/**
+* Responsive Screen
+* --> Responsive Web Design <--
+*     Mobile First Web Design
+*
+* Select the type of Responsive.
+*/
+
+/****** Grid options Bootstrap 4  ******/
+
+$widthGrid: ( 
+    Small: 576, 
+    Medium: 768, 
+    Large: 992, 
+    ExtraLarge: 1200, 
+    standard: 1366, 
+    standardLarge: 1920
+    );
+
+/****** Responsive Web Design  ******/
+
+/* @if map-get($responsive , responsiveWebDesing) == true {
+    @import 'Responsive_Screen/Responsive-Web-Design';
+} */
+@import 'Responsive_Screen/Responsive-Web-Design';
+
+/****** Mobile First Web Design  ******/
+
+/* @if map-get($responsive , mobileFirst) == true {
+    @import 'Responsive_Screen/Mobile-First-Web-Design';
+} */
+
+/****** Query-Mixins  ******/
+
+@import 'Responsive_Screen/Query-Mixins';

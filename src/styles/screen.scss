@@ -1,0 +1,56 @@
+/**
+  / ___/_____________  ___  ____
+  \__ \/ ___/ ___/ _ \/ _ \/ __ \
+ ___/ / /__/ /  /  __/  __/ / / /
+/____/\___/_/   \___/\___/_/ /_/
+
+ -Media Query -Components -Base -Modules -Theme -Layouts
+**/
+
+
+/**
+****** Responsive Web ******
+*
+* --> Responsive Web Design <--
+*     Mobile First Web Design
+*/
+
+$responsive: ( responsiveWebDesing: true, mobileFirst: false, orientation: true, print: false);
+
+/****** Path Dis Sass ******/
+
+$path-fonts: '../../components/fonts/';
+$path-img: '../images/png';
+
+/****** Base ******/
+
+@import 'base/global';
+
+/****** Theme ******/
+
+//@import 'theme/';
+
+/****** Modules ******/
+
+@import 'modules/header';
+@import 'modules/nav';
+@import 'modules/footer';
+
+/****** Layouts ******/
+
+@import 'layouts/home';
+
+/****** State ******/
+
+//@import 'state/';
+
+/****** Mobile ******/
+
+@import 'mobile/m-screen';
+
+/******* Print *******/
+
+@import 'print/p-screen';
+body {
+    content: 'Hola mundo';
+}

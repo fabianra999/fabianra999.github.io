@@ -1,0 +1,420 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #161616;
+    font-size: 14px;
+    font-family: "Poiret One", monospace, sans-serif;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+
+/*===============Navigation============*/
+
+#navIcon {
+    position: fixed;
+    width: 32px;
+    height: 25px;
+    margin: 3vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 9;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.iconLine {
+    background: #ababab;
+    width: 100%;
+    height: 2px;
+}
+
+#navIcon:hover .iconLine {
+    background: #fff;
+}
+
+nav {
+    min-width: 100vw;
+    /*   background: linear-gradient(rgb(0,0,0), rgba(0,0,0,0)); */
+    background: rgba(0, 0, 0, 0.8);
+    text-align: right;
+    position: fixed;
+    z-index: 7;
+    transform: translateY(-110%);
+    opacity: 0;
+}
+
+.navLink {
+    padding: 5px;
+    padding-right: 20px;
+    cursor: pointer;
+    color: #ababab;
+    text-decoration: none;
+    font-weight: 100;
+    display: block;
+}
+
+.navLink:hover {
+    color: #000;
+    background: #fff;
+}
+
+
+/*==========main sections==============*/
+
+.sect {
+    width: 100vw;
+    height: auto;
+    position: relative;
+    background: #161616;
+    margin-bottom: 35vmin;
+    padding-bottom: 15vmin;
+}
+
+#name {
+    position: fixed;
+    background: #161616;
+    margin-bottom: none;
+    height: 100vh;
+}
+
+.notFixed {
+    position: relative;
+    top: 100vh;
+}
+
+
+/*===========Name line animation==========*/
+
+#svgNameContainer {
+    width: 90vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+}
+
+
+/*====================Section title animations===========*/
+
+.titleBox {
+    width: 90vw;
+    height: 20vmin;
+    position: relative;
+    margin: 0 auto;
+}
+
+.topLine {
+    width: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    height: 0.25vmin;
+}
+
+.expand {
+    display: inline;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 5vmin;
+    font-weight: 100;
+    margin-top: 7vmin;
+    opacity: 0;
+}
+
+
+/*=============Image gallery=====================*/
+
+#gallery {
+    width: 100vw;
+    height: auto;
+    font-size: 0;
+    /*ALLOWS HALF PAGE WIDTH IMG'S SIDE BY SIDE?!?!?!?!?!?!*/
+    position: relative;
+}
+
+.imgBox {
+    display: inline-block;
+    width: 96vw;
+    margin: 1vmin 2vmin;
+    position: relative;
+    overflow: hidden;
+    perspective: 800px;
+}
+
+.imgBox a {
+    cursor: pointer;
+    display: block;
+    transform: rotateX(40deg);
+    transform-origin: bottom;
+    overflow: hidden;
+}
+
+.pic {
+    width: 100%;
+}
+
+.info {
+    position: absolute;
+    top: 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.info p {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3vw;
+}
+
+
+/*=============ABOUT SECTION================*/
+
+#ab {
+    height: auto;
+}
+
+.speil {
+    width: 90vw;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 6vmin;
+}
+
+#myHeadContainer {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 10vmin 0;
+}
+
+#myHead {
+    width: 40vmin;
+    transform: rotate(-15deg);
+}
+
+.speil span {
+    color: #c97204;
+}
+
+.left {
+    text-align: left;
+    margin-left: 3vmin;
+}
+
+.icons {
+    margin: 5vmin 0;
+}
+
+.icons .tech {
+    height: 7vmin;
+}
+
+
+/*===================contact=====================*/
+
+.socialContainer {
+    width: 90vw;
+    margin: 0 auto;
+    position: relative;
+    padding: 3vmin;
+    display: flex;
+    justify-content: space-between;
+}
+
+.socialContainer a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+}
+
+.socialIcons {
+    opacity: 0.2;
+    flex: 1;
+}
+
+#iconName {
+    text-align: center;
+    margin: 5vmin auto;
+    font-size: 7vmin;
+    position: relative;
+    width: 90vw;
+    box-sizing: border-box;
+}
+
+#iconName h1 {
+    opacity: 0;
+    position: absolute;
+    padding: 3vmin;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#contactForm {
+    position: relative;
+    top: 15vh;
+    width: 90vw;
+    margin: 0 auto;
+    padding: 5vmin;
+}
+
+#contactForm .box {
+    display: block;
+    width: 100%;
+    background: transparent;
+    color: #fff;
+    font-size: 3vmin;
+    opacity: 0.5;
+    padding: 1.5vmin;
+    box-sizing: border-box;
+    margin: 2vmin 0;
+}
+
+#contactForm .box:focus {
+    opacity: 1;
+}
+
+#contactForm #message {
+    min-height: 25vmin;
+}
+
+#contactForm .btn {
+    background: #fff;
+    opacity: 0.5;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+}
+
+#contactForm .btn:hover {
+    opacity: 1;
+}
+
+#contactForm p {
+    display: inline;
+    font-size: 3vmin;
+    font-family: Arial;
+    opacity: 0.5;
+}
+
+
+/*===============Media styles==================*/
+
+@media screen and (max-width: 500px) {
+    .info p {
+        font-size: 4.5vw;
+    }
+}
+
+@media screen and (min-width: 770px) {
+    /*===============NAVIGATION===============*/
+    /*  #navIcon {
+        display: none;
+    } */
+    /*  nav {
+        min-width: 100vw;
+        background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0));
+        text-align: center;
+        transform: translateY(0) !important;
+        display: flex;
+        justify-content: space-around;
+    } */
+    /*  .navLink {
+        flex: 1;
+        display: inline !important;
+    } */
+    /*============NAME ANIMATION============*/
+    #svgNameContainer {
+        width: 50vw;
+    }
+    /*==============HEADING ANIMATIONS===============*/
+    .titleBox {
+        width: 60vw;
+    }
+    /*=============IMAGE GALLERY==================*/
+    #gallery {
+        perspective: none;
+    }
+    .imgBox {
+        width: 50vw;
+        margin: 0;
+        transform: none;
+        transform-origin: none;
+        perspective: 800px;
+    }
+    .imgBox:nth-child(odd) {
+        perspective-origin: right bottom;
+    }
+    .imgBox:nth-child(even) {
+        perspective-origin: left bottom;
+    }
+    .imgBox a {
+        cursor: pointer;
+        display: block;
+        transform: rotateX(40deg);
+        transform-origin: bottom;
+        overflow: hidden;
+    }
+    .info p {
+        font-size: 2.5vw;
+    }
+    /*===============contact===========*/
+    .socialContainer {
+        width: 50vw;
+    }
+    #iconName {
+        font-size: 4vmin;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    /*==========gallery=============*/
+    #gallery {
+        /*======check on IE=====================*/
+        perspective: 800px;
+    }
+    .imgBox {
+        width: calc(100% / 3);
+        /*======check on IE=====================*/
+        transform: rotateX(40deg);
+        transform-origin: bottom;
+        transition: 0.5s;
+        perspective: none;
+        perspective-origin: none;
+    }
+    .imgBox:hover {
+        /*======check on IE=====================*/
+        transform: rotateX(0);
+        transform-origin: bottom;
+        z-index: 5;
+    }
+    .imgBox a {
+        transform: none;
+        transform-origin: none;
+    }
+    .info p {
+        font-size: 1.5vw;
+    }
+    /*=========about=============*/
+    .left {
+        margin-left: 30%;
+    }
+    /*===========contact=============*/
+    #contactForm {
+        width: 60vw;
+    }
+}

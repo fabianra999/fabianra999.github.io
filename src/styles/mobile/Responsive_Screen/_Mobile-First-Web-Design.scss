@@ -1,0 +1,29 @@
+/**
+*  Grid options Bootstrap 4
+*   --> Mobile First Web Design <--
+*        (Mobile to Desktop)
+  *     -> Small <576px        = col
+  *     -> Medium ≥768px       = sm
+  *     -> Large ≥992px        = md
+  *     -> Extra large ≥1200px = lg
+  *     -> Standard ≥1366px    = xl
+  *     -> Standard ≥1920px    = xxl
+*/
+
+@media only screen and (min-width: #{map_get($widthGrid, Small)}px) {
+}
+
+@media only screen and (min-width: #{map_get($widthGrid, Medium)}px) {
+}
+
+@media only screen and (min-width: #{map_get($widthGrid, Large)}px) {
+}
+
+@media only screen and (min-width: #{map_get($widthGrid, ExtraLarge)}px) {
+}
+
+@media only screen and (min-width: #{map_get($widthGrid, standard)}px) {
+}
+
+@media only screen and (min-width: #{map_get($widthGrid, standardLarge)}px) {
+}

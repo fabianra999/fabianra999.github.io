@@ -1,0 +1,13 @@
+# !/.idea/
+
+# Dependency directories
+node_modules
+
+# Dependency directories dist
+#dist
+#bower_components
+
+# Editores
+.idea/
+.vs/
+
